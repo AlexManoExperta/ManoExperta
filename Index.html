@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mano Experta — Reparaciones del Hogar</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Arial, Helvetica, sans-serif; color: #333; line-height: 1.6; }
+  header { background: #1a3c34; color: #fff; padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+  header h1 { font-size: 1.8em; }
+  header h1 span { color: #f0a500; }
+  nav a { color: #fff; text-decoration: none; margin-left: 20px; font-weight: bold; }
+  nav a:hover { color: #f0a500; }
+  .hero { background: #1a3c34; color: #fff; text-align: center; padding: 100px 5%; }
+  .hero h2 { font-size: 2.5em; margin-bottom: 15px; }
+  .hero p { font-size: 1.2em; margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto; }
+  .btn { background: #f0a500; color: #1a3c34; padding: 15px 40px; font-size: 1.2em; font-weight: bold; border: none; border-radius: 5px; cursor: pointer; text-decoration: none; display: inline-block; }
+  .btn:hover { background: #d49200; }
+  .services { padding: 60px 5%; background: #f7f7f7; }
+  .services h2 { text-align: center; font-size: 2em; margin-bottom: 40px; color: #1a3c34; }
+  .cards { display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; max-width: 1100px; margin: 0 auto; }
+  .card { background: #fff; border-radius: 10px; padding: 30px; width: 300px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+  .card h3 { color: #1a3c34; margin-bottom: 15px; font-size: 1.4em; }
+  .card ul { list-style: none; }
+  .card li { padding: 8px 0; border-bottom: 1px solid #eee; }
+  .card li:before { content: "✓ "; color: #f0a500; font-weight: bold; }
+  .photos { padding: 60px 5%; text-align: center; }
+  .photos h2 { font-size: 2em; margin-bottom: 30px; color: #1a3c34; }
+  .photo-grid { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; max-width: 1100px; margin: 0 auto; }
+  .photo-grid div { width: 300px; height: 200px; background: #ddd; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #888; font-size: 1.1em; }
+  .contact { background: #1a3c34; color: #fff; padding: 60px 5%; text-align: center; }
+  .contact h2 { font-size: 2em; margin-bottom: 20px; }
+  .contact form { max-width: 500px; margin: 0 auto; text-align: left; }
+  .contact input, .contact textarea { width: 100%; padding: 12px; margin-bottom: 15px; border: none; border-radius: 5px; font-size: 1em; }
+  .contact button { width: 100%; }
+  footer { background: #111; color: #aaa; text-align: center; padding: 20px; font-size: 0.9em; }
+  @media (max-width: 768px) { .hero h2 { font-size: 1.8em; } nav a { margin-left: 10px; font-size: 0.9em; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>Mano <span>Experta</span></h1>
+  <nav>
+    <a href="#servicios">Servicios</a>
+    <a href="#fotos">Trabajos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Reparaciones de todo tipo, interior y exterior</h2>
+  <p>Luces, pintura, puertas, stucco, parches, framing, landscaping y zacate sintético. Con garantía y presupuesto gratis.</p>
+  <a href="#contacto" class="btn">Pídeme presupuesto</a>
+</section>
+
+<section class="services" id="servicios">
+  <h2>Nuestros servicios</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Interior</h3>
+      <ul>
+        <li>Cambio de luces viejas a modernas</li>
+        <li>Reparación de lámparas y abanicos</li>
+        <li>Acomodar puertas chuecas</li>
+        <li>Pintura interior</li>
+        <li>Reparaciones generales</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Exterior</h3>
+      <ul>
+        <li>Reparaciones y cambio de stucco</li>
+        <li>Parches y chirraqueando</li>
+        <li>Framing</li>
+        <li>Landscaping</li>
+        <li>Instalación de zacate sintético</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="photos" id="fotos">
+  <h2>Trabajos realizados</h2>
+  <div class="photo-grid">
+    <div>Foto antes / después 1</div>
+    <div>Foto antes / después 2</div>
+    <div>Foto antes / después 3</div>
+  </div>
+</section>
+
+<section class="contact" id="contacto">
+  <h2>Pídeme presupuesto gratis</h2>
+  <form action="https://formspree.io/f/TU_ID" method="POST">
+    <input type="text" name="nombre" placeholder="Tu nombre" required>
+    <input type="tel" name="telefono" placeholder="Tu teléfono" required>
+    <textarea name="mensaje" rows="4" placeholder="¿Qué necesitas reparar?" required></textarea>
+    <button type="submit" class="btn">Enviar</button>
+  </form>
+</section>
+
+<footer>
+  <p>Mano Experta — Reparaciones del hogar, interior y exterior</p>
+  <p>Tu teléfono aquí</p>
+</footer>
+</body>
+</html>
